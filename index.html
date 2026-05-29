@@ -33,7 +33,7 @@
         <div class="hero-text">
             <p class="hero-greeting">Hi there 👋 I'm</p>
             <h1>Riya Dumbare</h1>
-            <h3>Web Developer <span class="dot">•</span> MERN Learner <span class="dot">•</span> DSA Enthusiast</h3>
+            <h3><span id="typewriter"></span><span class="cursor">|</span></h3>
             <p class="hero-desc">I build creative, interactive and real-world web experiences.</p>
             <div class="hero-links">
                 <a href="#projects" class="btn-primary">See My Work</a>
@@ -58,7 +58,7 @@
             <p>When I'm not coding, you'll find me exploring new tech, working on personal projects, or contributing to green awareness through my urban spaces platform.</p>
         </div>
         <div class="about-stats">
-            <div class="stat-card"><h3>3+</h3><p>Projects Built</p></div>
+            <div class="stat-card"><h3>4+</h3><p>Projects Built</p></div>
             <div class="stat-card"><h3>7+</h3><p>Technologies</p></div>
             <div class="stat-card"><h3>2</h3><p>Certificates</p></div>
         </div>
@@ -91,17 +91,39 @@
     </div>
     <div class="project-container">
 
-        <!-- Project 1: Banking Fraud Detection -->
+        <!-- Project 1: Weather Forecast App -->
         <div class="project-card featured">
+            <div class="project-top">
+                <div class="project-icon">⛅</div>
+                    <div class="project-links">
+                        <a href="https://github.com/riya-dumbare/Weather-Forecast"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub repo for Weather Forecast App">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+            
+                <a href="https://weathe-r-forecast.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Live demo" class="live-link">↗</a> 
+                </div>
+            </div>
+            <div class="project-badge">⭐ Featured</div>
+            <h3>Weather Forecast App</h3>
+            <p>A production-grade full-stack app with JWT auth, real-time weather data, saved locations, Redis caching and automated email alerts via cron jobs. Dockerized with PostgreSQL and Prisma ORM.</p>
+            <div class="tech-tags">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>JWT</span>
+            </div>
+        </div>    
+        <!-- Project 1: Banking Fraud Detection -->
+        <div class="project-card">
             <div class="project-top">
                 <div class="project-icon">🏦</div>
                 <div class="project-links">
                     <a href="https://github.com/riya-dumbare/Banking-Fraud-Detection-System" target="_blank" rel="noopener noreferrer" aria-label="GitHub repo for Banking Fraud Detection System">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
                     </a>
+                    <!-- Add your Netlify live link below once deployed -->
+                    <!-- <a href="YOUR_NETLIFY_URL" target="_blank" rel="noopener noreferrer" aria-label="Live demo" class="live-link">↗</a> -->
                 </div>
             </div>
-            <div class="project-badge">⭐ Featured</div>
             <h3>Banking Fraud Detection System</h3>
             <p>A full-stack application that detects suspicious banking transactions in real time. Combines a Python-based ML backend with a JavaScript frontend to flag anomalies and protect users from fraud.</p>
             <div class="tech-tags">
@@ -178,8 +200,27 @@
         <div class="underline"></div>
     </div>
     <p class="contact-intro">I'm currently open to new opportunities and collaborations. Feel free to reach out!</p>
-    <a href="mailto:riyadumbare@gmail.com" class="email-link">riyadumbare@gmail.com</a>
-    <div class="contact-links">
+
+    <div class="contact-wrapper">
+        <!-- Contact Form — replace YOUR_FORM_ID after signing up free at formspree.io -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit">Send Message</button>
+            <p class="form-status" id="form-status"></p>
+        </form>
+
+        <div class="contact-sidebar">
+            <p class="sidebar-label">Or reach me at</p>
+            <a href="mailto:riyadumbare@gmail.com" class="email-link">riyadumbare@gmail.com</a>
+            <div class="contact-links">
         <a href="https://www.linkedin.com/in/riya-dumbare" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
@@ -188,6 +229,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
         </a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -196,6 +239,7 @@
 </footer>
 
 <script>
+    /* ── Hamburger ── */
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
     hamburger.addEventListener('click', () => {
@@ -208,6 +252,8 @@
             hamburger.setAttribute('aria-expanded', false);
         });
     });
+
+    /* ── Active nav on scroll ── */
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('#nav-menu a');
     window.addEventListener('scroll', () => {
@@ -218,6 +264,56 @@
             if (l.getAttribute('href') === '#' + current) l.classList.add('active');
         });
     });
+
+    /* ── Typewriter ── */
+    const roles = ['Web Developer', 'MERN Learner', 'DSA Enthusiast', 'Full-Stack Builder'];
+    const el = document.getElementById('typewriter');
+    let ri = 0, ci = 0, deleting = false;
+    function type() {
+        const word = roles[ri];
+        el.textContent = deleting ? word.substring(0, ci--) : word.substring(0, ci++);
+        let delay = deleting ? 60 : 100;
+        if (!deleting && ci === word.length + 1) { delay = 1800; deleting = true; }
+        else if (deleting && ci === 0) { deleting = false; ri = (ri + 1) % roles.length; delay = 300; }
+        setTimeout(type, delay);
+    }
+    type();
+
+    /* ── Scroll fade-in ── */
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.skill-card, .project-card, .certificate-card, .stat-card, .about-text, .section-header').forEach(el => {
+        el.classList.add('fade-up');
+        observer.observe(el);
+    });
+
+    /* ── Contact form (Formspree AJAX) ── */
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('.form-submit');
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            try {
+                const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+                if (res.ok) {
+                    status.textContent = '✅ Message sent! I\'ll get back to you soon.';
+                    status.className = 'form-status success';
+                    form.reset();
+                } else {
+                    throw new Error();
+                }
+            } catch {
+                status.textContent = '❌ Something went wrong. Please email me directly.';
+                status.className = 'form-status error';
+            }
+            btn.textContent = 'Send Message';
+            btn.disabled = false;
+        });
+    }
 </script>
 
 </body>
