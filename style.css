@@ -443,7 +443,7 @@ section {
     margin-bottom: 16px;
 }
 
-.cert-badge {
+.cert-link {
     display: inline-block;
     font-size: 11px;
     padding: 4px 12px;
@@ -452,8 +452,16 @@ section {
     border: 1px solid rgba(230,57,70,0.3);
     color: var(--red);
     font-weight: 600;
+
+    text-decoration: none;    
+    transition: all var(--transition);
 }
 
+.cert-link:hover {
+    background: var(--red);
+    color: #fff;
+    border-color: var(--red);
+}
 /* ===== CONTACT ===== */
 #contact {
     text-align: center;
